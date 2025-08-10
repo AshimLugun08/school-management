@@ -1,0 +1,36 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs
+*.log
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+tmp/
+temp/
+
+# Optional caches
+.cache/
+.next/
+.out/
+
+# VSCode settings
+.vscode/
+
+# Supabase local config (if using local dev)
+.supabase/
