@@ -10,7 +10,10 @@ const app = express();
 app.use(cors({ origin: '*', methods: ['GET', 'POST'], allowedHeaders: ['Content-Type'] }));
 app.use(express.json());
 
+// API routes
 app.use('/api', schoolRoutes);
+
+// Health check
 app.get('/api', (req, res) => res.json({ status: 'ok' }));
 
 export default serverless(app);
